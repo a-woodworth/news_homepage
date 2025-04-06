@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url("assets/fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url("assets/fonts/Inter-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+  src: url("assets/fonts/Inter-ExtraBold.woff2") format("woff2");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+a:focus {
+  outline: 2px dotted currentColor;
+  outline-offset: 2px;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --font-base: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
