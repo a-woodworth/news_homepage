@@ -1,0 +1,15 @@
+// Header Styles
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: calc(var(--spacing-s) + var(--spacing-xxxs));
+  margin-block-end: var(--spacing-xl);
+}
+
+.logo svg {
+  pointer-events: none;
+  height: 1.75rem;
+  width: 2.8125rem;
+}

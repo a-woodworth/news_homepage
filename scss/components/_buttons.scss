@@ -1,0 +1,18 @@
+// Button Styles
+
+// Icon Menu Buttons
+.btn-icon {
+  background-color: var(--off-white);
+  border: 0;
+  color: var(--dark-blue);
+  cursor: pointer;
+  padding-block: 0;
+  padding-inline: 0;
+
+  &:focus,
+  &:hover {
+    color: var(--red);
+    outline: 2px dotted var(--red);
+    outline-offset: 6px;
+  }
+}
