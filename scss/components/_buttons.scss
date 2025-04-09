@@ -16,3 +16,17 @@
     outline-offset: 6px;
   }
 }
+
+// Nav Button Styles
+.mobile-nav__open {
+  @media (min-width: 44.875rem) {
+    display: none;
+  }
+}
+
+.mobile-nav__close {
+  position: fixed;
+  top: calc(var(--spacing-m) + 4px);
+  right: calc(var(--spacing-s) + 2px);
+  z-index: 1;
+}

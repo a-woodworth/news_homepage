@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block-start: calc(var(--spacing-s) + var(--spacing-xxxs));
+  padding-block-start: calc(var(--spacing-s) + var(--spacing-xxxs));
   margin-block-end: var(--spacing-xl);
 }
 
@@ -12,4 +12,25 @@
   pointer-events: none;
   height: 1.75rem;
   width: 2.8125rem;
+}
+
+.skip-link {
+  background-color: var(--off-white);
+  color: var(--dark-blue);
+  display: inline-block;
+  font-size: var(--text-m);
+  line-height: var(--leading-none);
+  padding: 0.75rem;
+  position: absolute;
+  top: -var(--spacing-xxs);
+  left: var(--spacing-xs);
+
+  &:not(:focus) {
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
 }

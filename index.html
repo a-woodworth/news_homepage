@@ -18,117 +18,114 @@
   </head>
 
   <body>
-    <header class="main-header wrapper">
-      <div class="logo">
-        <a href="/" class="logo__link">
-          <img
-            src="assets/images/logo.svg"
-            alt="Web News Network logo. Click for home."
-          />
-        </a>
-      </div>
-      <nav class="main-nav" aria-label="Main">
-        <ul class="main-nav-list desktop-nav hidden">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#" aria-current="page"
-              >Home</a
-            >
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">New</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Popular</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Trending</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Categories</a>
-          </li>
-        </ul>
-        <span id="nav-label" hidden>Toggle navigation</span>
-        <button
-          id="mobile-menu"
-          class="btn-icon mobile-nav__open"
-          type="button"
-          aria-haspopup="true"
-          aria-expanded="false"
-          aria-labelledby="nav-label"
-          aria-controls="mobile-navigation"
-        >
-          <svg
-            aria-hidden="true"
-            width="40"
-            height="17"
-            viewBox="0 0 40 17"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="40" height="3" fill="currentColor" />
-            <rect y="7" width="40" height="3" fill="currentColor" />
-            <rect y="14" width="40" height="3" fill="currentColor" />
-            <rect width="40" height="3" fill="currentColor" />
-          </svg>
-        </button>
-        <div class="mobile-nav__menu hidden">
-          <button
-            id="close-menu"
-            class="btn-icon mobile-nav__close"
-            type="button"
-            aria-label="close menu"
-          >
-            <svg
-              aria-hidden="true"
-              width="32"
-              height="31"
-              viewBox="0 0 32 31"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="2.91846"
-                y="0.297211"
-                width="40"
-                height="3"
-                transform="rotate(45 2.91846 0.297211)"
-                fill="currentColor"
-              />
-              <rect
-                x="0.797363"
-                y="28.5815"
-                width="40"
-                height="3"
-                transform="rotate(-45 0.797363 28.5815)"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-          <ul id="mobile-navigation" class="mobile-nav__links">
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="#" aria-current="page"
+    <header>
+      <a href="#maincontent" class="skip-link">Skip to content</a>
+      <div class="main-header wrapper">
+        <div class="logo">
+          <a href="/" class="logo__link">
+            <img
+              src="assets/images/logo.svg"
+              alt="Web News Network logo. Click for home."
+            />
+          </a>
+        </div>
+        <div class="nav-overlay"></div>
+        <nav class="main-nav" aria-label="Main">
+          <ul class="main-nav-list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#" aria-current="page"
                 >Home</a
               >
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="#">New</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">New</a>
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="#">Popular</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Popular</a>
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="#">Trending</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Trending</a>
             </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="#">Categories</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Categories</a>
             </li>
           </ul>
-        </div>
-      </nav>
+          <template id="burger-template">
+            <span id="nav-label" hidden>Toggle navigation</span>
+            <button
+              id="mobile-menu"
+              class="btn-icon mobile-nav__open"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-labelledby="nav-label"
+              aria-controls="mobile-navigation"
+            >
+              <svg
+                aria-hidden="true"
+                width="40"
+                height="17"
+                viewBox="0 0 40 17"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="3" fill="currentColor" />
+                <rect
+                  y="7"
+                  width="40"
+                  height="3"
+                  fill="currentColor"
+                />
+                <rect
+                  y="14"
+                  width="40"
+                  height="3"
+                  fill="currentColor"
+                />
+                <rect width="40" height="3" fill="currentColor" />
+              </svg>
+            </button>
+          </template>
+          <template id="close-menu-template">
+            <button
+              id="close-menu"
+              class="btn-icon mobile-nav__close hidden"
+              type="button"
+              aria-label="close menu"
+            >
+              <svg
+                aria-hidden="true"
+                width="32"
+                height="31"
+                viewBox="0 0 32 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2.91846"
+                  y="0.297211"
+                  width="40"
+                  height="3"
+                  transform="rotate(45 2.91846 0.297211)"
+                  fill="currentColor"
+                />
+                <rect
+                  x="0.797363"
+                  y="28.5815"
+                  width="40"
+                  height="3"
+                  transform="rotate(-45 0.797363 28.5815)"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </template>
+        </nav>
+      </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper" id="maincontent">
       <h1 class="sr-only">
-        Web News Network | Your Source for Tech Trends
+        <span>Web News Network | Your Source for Tech Trends</span>
       </h1>
       <div class="featured">
         <article class="featured-article">
@@ -138,7 +135,7 @@
           <picture class="featured-article__image">
             <source
               srcset="assets/images/image-web-3-desktop.jpg"
-              media="(min-width: 75rem)"
+              media="(min-width: 44.875rem)"
             />
             <img
               src="assets/images/image-web-3-mobile.jpg"
@@ -253,5 +250,6 @@
         <a href="https://github.com/a-woodworth">a-woodworth</a>.
       </p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

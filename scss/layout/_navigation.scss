@@ -1,0 +1,60 @@
+// Navigation Styles
+
+.main-nav {
+  background-color: var(--off-white);
+  color: var(--dark-blue);
+
+  &-list {
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: (var(--nav-list-layout, column));
+    flex-wrap: wrap;
+    gap: var(--spacing-m);
+    height: var(--nav-list-height, 100dvh);
+    padding-block-start: calc(
+      var(--spacing-xxxl) + var(--spacing-xxxl) + var(--spacing-xs)
+    );
+    padding-inline: var(--spacing-m);
+    position: var(--nav-list-position, fixed);
+    inset: 0 0 0 8rem;
+    visibility: var(--nav-list-visibility, hidden);
+
+    // if javascript not enabled, show menu list items
+    &:first-child {
+      --nav-list-layout: row;
+      --nav-list-position: static;
+      --nav-list-height: auto;
+      --nav-list-width: 100%;
+      --nav-list-visibility: visible;
+      padding-block-start: 0;
+    }
+
+    @media (min-width: 44.875rem) {
+      --nav-list-layout: row;
+      --nav-list-position: static;
+      --nav-list-height: auto;
+      --nav-list-width: 100%;
+      --nav-list-visibility: visible;
+      gap: var(--spacing-xxl);
+      height: var(--nav-list-height, auto);
+      padding-block-start: 0;
+    }
+  }
+
+  &__link {
+    font-size: var(--text-s);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--red);
+    }
+  }
+  @media (min-width: 44.875rem) {
+    --nav-list-position: static;
+  }
+}
+
+.mobile-nav__open[aria-expanded='true'] ~ .main-nav-list {
+  --nav-list-visibility: visible;
+}
