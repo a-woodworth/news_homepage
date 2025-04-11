@@ -6,10 +6,6 @@
   text-align: center;
   text-wrap: balance;
 
-  @media (min-width: 69.375rem) {
-    margin-block-end: 0;
-  }
-
   a:hover {
     color: var(--dark-blue);
     text-decoration: none;

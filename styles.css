@@ -196,6 +196,12 @@ body {
   padding-block-start: calc(var(--spacing-s) + var(--spacing-xxxs));
   margin-block-end: var(--spacing-xl);
 }
+@media (min-width: 69.375rem) {
+  .main-header {
+    padding-block-start: calc(var(--spacing-xxxl) + var(--spacing-m));
+    margin-block-end: calc(var(--spacing-l) + var(--spacing-m));
+  }
+}
 
 .logo svg {
   pointer-events: none;
@@ -402,11 +408,6 @@ body {
   margin-block-end: var(--spacing-m);
   text-align: center;
   text-wrap: balance;
-}
-@media (min-width: 69.375rem) {
-  .main-footer {
-    margin-block-end: 0;
-  }
 }
 .main-footer a:hover {
   color: var(--dark-blue);

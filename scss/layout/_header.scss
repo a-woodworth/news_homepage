@@ -6,6 +6,11 @@
   align-items: center;
   padding-block-start: calc(var(--spacing-s) + var(--spacing-xxxs));
   margin-block-end: var(--spacing-xl);
+
+  @media (min-width: 69.375rem) {
+    padding-block-start: calc(var(--spacing-xxxl) + var(--spacing-m));
+    margin-block-end: calc(var(--spacing-l) + var(--spacing-m));
+  }
 }
 
 .logo svg {
