@@ -10,15 +10,12 @@
     'lede';
   margin-block-end: var(--spacing-xxxl);
 
-  @media (min-width: 44.875rem) {
+  @media (min-width: 69.375rem) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       'image image'
       'headline lede';
     gap: var(--spacing-m);
-  }
-
-  @media (min-width: 69.375rem) {
     margin-block-end: 0;
   }
 
@@ -30,7 +27,7 @@
     margin-block-start: var(--spacing-m);
     margin-block-end: var(--spacing-xs);
 
-    @media (min-width: 44.875rem) {
+    @media (min-width: 69.375rem) {
       font-size: var(--text-xxl);
       margin-block-start: 0;
       margin-block-end: 0;
@@ -86,7 +83,7 @@
     line-height: var(--leading-none);
     margin-block-end: 0.3125rem;
 
-    @media (min-width: 44.875rem) {
+    @media (min-width: 69.375rem) {
       font-size: var(--text-xl);
     }
   }
