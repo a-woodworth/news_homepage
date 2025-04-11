@@ -1,0 +1,47 @@
+// Newsfeed Card Styles
+
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 'image content';
+  column-gap: var(--spacing-m);
+
+  &__header {
+    max-width: 14.125rem;
+  }
+
+  &__number {
+    color: var(--red);
+    display: block;
+    font-size: var(--text-l);
+    font-weight: 700;
+    margin-block-end: var(--spacing-xxs);
+  }
+
+  &__title {
+    color: var(--dark-blue);
+    font-size: var(--text-s);
+    font-weight: 800;
+    line-height: var(--leading-fine);
+    padding-block-end: var(--spacing-xxxs);
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--red);
+    }
+  }
+
+  &__text {
+    color: var(--dark-gray-blue);
+    line-height: var(--leading-standard);
+  }
+
+  &__image {
+    background-color: var(--gray-blue);
+    grid-area: image;
+    max-height: 8.0625rem;
+  }
+}
