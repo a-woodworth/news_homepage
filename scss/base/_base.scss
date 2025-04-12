@@ -8,6 +8,8 @@
   --off-white: hsl(36 100% 99%);
   --orange: hsl(35 77% 62%);
   --red: hsl(5 85% 63%);
+  // Adding dark red color to meet AA contrast ratio
+  --dark-red: hsl(5 85% 48%);
 
   // Spacing
   --spacing-xxxl: 4rem; // 64px

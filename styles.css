@@ -76,6 +76,7 @@ select {
   --off-white: hsl(36 100% 99%);
   --orange: hsl(35 77% 62%);
   --red: hsl(5 85% 63%);
+  --dark-red: hsl(5 85% 48%);
   --spacing-xxxl: 4rem;
   --spacing-xxl: 2.5rem;
   --spacing-xl: 2rem;
@@ -177,7 +178,7 @@ body {
   text-decoration: none;
 }
 .card__link:hover {
-  color: var(--red);
+  color: var(--dark-red);
 }
 .card__text {
   color: var(--dark-gray-blue);
@@ -267,11 +268,16 @@ body {
   }
 }
 .main-nav__link {
-  font-size: var(--text-xs);
+  font-size: var(--text-s);
   text-decoration: none;
 }
+@media (min-width: 44.875rem) {
+  .main-nav__link {
+    font-size: var(--text-xs);
+  }
+}
 .main-nav__link:hover, .main-nav__link:focus {
-  color: var(--red);
+  color: var(--dark-red);
 }
 @media (min-width: 44.875rem) {
   .main-nav {
@@ -410,7 +416,7 @@ body {
   text-wrap: balance;
 }
 .main-footer a:hover {
-  color: var(--dark-blue);
+  color: var(--dark-red);
   text-decoration: none;
 }
 
