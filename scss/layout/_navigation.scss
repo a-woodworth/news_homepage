@@ -18,6 +18,12 @@
     position: var(--nav-list-position, fixed);
     inset: 0 0 0 8rem;
     visibility: var(--nav-list-visibility, hidden);
+    transform: var(--nav-list-transform, translateX(100%));
+    transition: var(
+      --nav-list-transition,
+      transform 0.5s ease-in-out,
+      visibility 0.3s linear
+    );
 
     // if javascript not enabled, show menu list items
     &:first-child {
@@ -26,6 +32,8 @@
       --nav-list-height: auto;
       --nav-list-width: 100%;
       --nav-list-visibility: visible;
+      --nav-list-transform: none;
+      --nav-list-transition: none;
       padding-block-start: 0;
     }
 
@@ -35,9 +43,16 @@
       --nav-list-height: auto;
       --nav-list-width: 100%;
       --nav-list-visibility: visible;
+      --nav-list-transform: none;
+      --nav-list-transition: none;
       gap: var(--spacing-xxl);
       height: var(--nav-list-height, auto);
       padding-block-start: 0;
+    }
+
+    @media (prefers-reduced-motion) {
+      --nav-list-transition: none;
+      --nav-list-transform: none;
     }
   }
 
@@ -61,4 +76,13 @@
 
 .mobile-nav__open[aria-expanded='true'] ~ .main-nav-list {
   --nav-list-visibility: visible;
+  --nav-list-transform: translateX(0);
+}
+
+.overlay {
+  // --dark-blue = rgb(0, 0, 26)
+  background-color: rgba(0, 0, 26, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 1;
 }
