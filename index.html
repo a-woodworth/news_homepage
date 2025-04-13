@@ -54,16 +54,14 @@
               <a class="main-nav__link" href="#">Categories</a>
             </li>
           </ul>
+          <span id="nav-label" hidden>Toggle navigation</span>
           <template id="burger-template">
-            <span id="nav-label" hidden>Toggle navigation</span>
             <button
-              id="mobile-menu"
               class="btn-icon mobile-nav__open"
               type="button"
               aria-haspopup="true"
               aria-expanded="false"
               aria-labelledby="nav-label"
-              aria-controls="mobile-navigation"
             >
               <svg
                 aria-hidden="true"
@@ -92,7 +90,6 @@
           </template>
           <template id="close-menu-template">
             <button
-              id="close-menu"
               class="btn-icon mobile-nav__close hidden"
               type="button"
               aria-label="close menu"

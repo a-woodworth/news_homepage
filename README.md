@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/news-homepage----accessibility-css-grid-javascript-5zlYY05uG8)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/news_homepage)
 
 ### Built with
